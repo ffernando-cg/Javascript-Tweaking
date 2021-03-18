@@ -241,15 +241,24 @@ $(document).ready(function() {
 init();
 animate();
 
+$('.card-presentation').click(function(){
+  $(this).toggleClass('flipped');
+});
 
-var changeSlide1 =() =>{
-  $('.carousel').carousel('next');
+var documentLoadTypeWriterContact = () => {
+  //textTypeWriterContact
+  var textTyping = document.getElementById('textTypeWriterContact');
+
+  var typewriter = new Typewriter(textTyping, {
+      loop: false
+  });
+
+  typewriter.pauseFor(3500)
+    .typeString('Want to contact me? ')
+    .pauseFor(3000)
+    .typeString('<strong>Just click the card below!</strong>')
+    .start();
+
 }
 
-var changeSlide2 =() =>{
-  $('.carousel').carousel('next');
-}
-
-var changeSlide3 =() =>{
-  $('.carousel').carousel('next');
-}
+documentLoadTypeWriterContact();
