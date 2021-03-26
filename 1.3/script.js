@@ -74,6 +74,9 @@ class Particle{
 
 //function that initialices the creation of dots among the screen and sets every x and y respectively
 //funcion que se encarga de inicializar la creacion de puntos dentro del margen de la pantalla y les proporciona tanto la x como la y
+
+//This function is also on charge of initializing the typewritter effect that appears en 4th page and last page
+//Esta funcion tambien esta a cargo de inicializar el efecto de escritura que aparece en la 4ta pagina y la ultima
 function init() {
   particlesArray = [];
   let numberOfParticles = (canvas.height * canvas.width) / 9000;
@@ -102,16 +105,16 @@ function init() {
   });
 
   typewriter.typeString('konstudio.mx')
-      .pauseFor(4000)
-      .callFunction(() => $('.carousel').carousel(1), typewriter)
+      .callFunction(() => $('.carousel').carousel(0), typewriter)
+      .pauseFor(4000) 
       .deleteAll()
       .typeString('yamamotodental.com.mx')
+      .callFunction(() => $('.carousel').carousel(1), typewriter)
       .pauseFor(4000)
       .deleteAll()
-      .callFunction(() => $('.carousel').carousel(2), typewriter)
       .typeString('thesingletonsaz.org')
+      .callFunction(() => $('.carousel').carousel(2), typewriter)
       .pauseFor(4000)
-      .callFunction(() => $('.carousel').carousel(3), typewriter)
       .start();
 
       

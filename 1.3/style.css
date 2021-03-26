@@ -561,6 +561,11 @@ figure a{
   margin-top: -10%;
 }
 
+.spacingForMiddle{
+  margin-top: 10vh;
+}
+
+
 @media screen and (min-width: 450px) {
   .container-presentation{
     left: 50%;
@@ -578,6 +583,10 @@ figure a{
   dl dd{
     margin-left: 20px;
   }
+
+  .spacingForMiddle{
+    margin-top: 1vw;
+  }
 }
 
 
@@ -585,6 +594,7 @@ figure a{
 /*===========================================*/
 .main-timeline{
   position: relative;
+  margin-top: 5vh;
 }
 .main-timeline:after{
   content: '';
@@ -700,7 +710,9 @@ figure a{
   width: auto;
 }
 
+
 @media screen and (max-width:576px){
+  .main-timeline {margin-top: 5vh;}
   .main-timeline .title{ font-size: 18px; };
 
 }
@@ -711,4 +723,58 @@ figure a{
       padding: 20px 15px 20px 5px;
       border-radius: 0 20px 20px 20px;
   }
+  
+}
+
+.hexagon {
+  position: relative;
+  width: 25px; 
+  height: 14.43px;
+  background-color: #ffffff;
+  margin: 7.22px 0;
+  border-left: solid 2px #00e1ff;
+  border-right: solid 2px #00e1ff;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 17.68px;
+  height: 17.68px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 1.6612px;
+}
+
+.hexagon:before {
+  top: -8.8388px;
+  border-top: solid 2.8284px #00e1ff;
+  border-right: solid 2.8284px #00e1ff;
+}
+
+.hexagon:after {
+  bottom: -8.8388px;
+  border-bottom: solid 2.8284px #00e1ff;
+  border-left: solid 2.8284px #00e1ff;
+}
+
+.hexagon-complete{
+  background-color: #00ffff;
+}
+
+
+.border_white{
+  border: 0.5px solid white;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left-color: transparent;
+  justify-content: center;
+}
+
+.white_line_divider{
+  border-bottom: 3px solid white;
 }
