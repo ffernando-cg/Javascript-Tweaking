@@ -106,15 +106,15 @@ function init() {
 
   typewriter.typeString('konstudio.mx')
       .callFunction(() => $('.carousel').carousel(0), typewriter)
-      .pauseFor(4000) 
+      .pauseFor(500) 
       .deleteAll()
       .typeString('yamamotodental.com.mx')
       .callFunction(() => $('.carousel').carousel(1), typewriter)
-      .pauseFor(4000)
+      .pauseFor(500)
       .deleteAll()
       .typeString('thesingletonsaz.org')
       .callFunction(() => $('.carousel').carousel(2), typewriter)
-      .pauseFor(4000)
+      .pauseFor(500)
       .start();
 
       
