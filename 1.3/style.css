@@ -17,7 +17,7 @@ body{
   background: radial-gradient(#8cdbff,#4073ff); /*8cdbff*/
 }
 .section:nth-child(2){
-  background-color: rgb(255, 255, 255);
+  background-color: #d9d9d9;
 }
 .section:nth-child(3){
   background-color: #04293a;
@@ -119,7 +119,7 @@ body{
 
 .Bann-WhoIAm{
   background-image: linear-gradient(46deg, rgb(116, 201, 226) 0%, rgb(42, 91, 255) 100%);
-  height: 100px;
+  height: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,7 +562,7 @@ figure a{
 }
 
 .spacingForMiddle{
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 
@@ -677,6 +677,7 @@ figure a{
 .main-timeline .timeline:nth-child(4n+2) .timeline-content{
   background: linear-gradient(to right,#4479ff,#252a31);
 }
+
 @media screen and (max-width:767px){
   .main-timeline .timeline{
       width: 100%;
@@ -712,7 +713,7 @@ figure a{
 
 
 @media screen and (max-width:576px){
-  .main-timeline {margin-top: 5vh;}
+  .main-timeline {margin-top: 1vh;}
   .main-timeline .title{ font-size: 18px; };
 
 }
@@ -723,7 +724,18 @@ figure a{
       padding: 20px 15px 20px 5px;
       border-radius: 0 20px 20px 20px;
   }
-  
+}
+
+@media screen and (max-width:420px) {
+  .timeline{
+    top: -200px;
+  }
+}
+
+@media screen and (max-width:555px){
+  .h5{
+    font-size: 1rem!important;
+  }
 }
 
 .hexagon {
@@ -777,4 +789,10 @@ figure a{
 
 .white_line_divider{
   border-bottom: 3px solid white;
+}
+
+@media screen and (max-width:340px){
+  #MyProgramSkills-TextChange{
+    font-size: 1.4rem;
+  }
 }
