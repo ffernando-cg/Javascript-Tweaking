@@ -711,11 +711,18 @@ figure a{
   width: auto;
 }
 
+.adaptCards{
+  margin-top: 0px;
+}
+.titleChanging{
+  font-size: 1.5vw !important;
+}
 
 @media screen and (max-width:576px){
   .main-timeline {margin-top: 1vh;}
-  .main-timeline .title{ font-size: 18px; };
-
+  .main-timeline .title{ font-size: 18px; }
+  .adaptCards {margin-top: -30px;}
+  .titleChanging {font-size: 2.5vw!important;}
 }
 
 @media screen and (max-width:450px){
